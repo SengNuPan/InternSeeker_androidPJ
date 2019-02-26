@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        tools:context=".MainActivity" >
+
+        <SearchView
+            android:id="@+id/searchView1"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+           android:layout_marginTop="40dp"
+            android:layout_alignRight="@+id/list_view"
+            android:layout_marginLeft="0dp"
+            android:queryHint="Search here."
+         android:background="#eeeeef"
+            >
+
+        </SearchView>
+        <ListView
+            android:layout_marginTop="92dp"
+            android:id="@+id/list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            />
+    </RelativeLayout>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
